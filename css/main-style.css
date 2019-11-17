@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400,600|Open+Sans:300,400,700');
+html {overflow-x: hidden;}
+body {width:100%;font-family: 'Open Sans', sans-serif;margin: 0 !important;background: #ffffff;font-size: 14px;color: #2A2F35;line-height: 1.7;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+a,a:focus {color: #2C99ED;text-decoration: none;font-family: 'IBM Plex Serif';cursor: click}
+a:hover {color: #000000;text-decoration: none;}
+a:focus {text-decoration: none;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;outline-style: none;outline: 0;}
+h1,h2,h3,h4,h5,h6 {margin-top: 0;margin-bottom: 15px;font-weight: normal;line-height: 1.25;}
+h1 {font-size: 36px;font-family: 'IBM Plex Serif', sans-serif;}
+h2 {font-size: 30px;font-family: 'IBM Plex Serif', sans-serif;}
+h3 {font-size: 32px;font-family: 'IBM Plex Serif', sans-serif;}
+h4 {font-size: 20px;}
+h5 {font-size: 18px;}
+h6 {font-size: 18px;}
+p{font-size: 16px;}
+ul{margin-bottom: 0;}
+.transition{-webkit-transition: all 0.6s ease; -moz-transition: all 0.6s ease; -ms-transition: all 0.6s ease; -o-transition: all 0.6s ease; transition: all 0.6s ease;}
+.bold{font-weight: 600;}
+.section {padding: 100px 0;}
+.section-top{padding-top: 100px;}
+.box{border: 2px solid red;}
+.clearfix:after {content: ".";display: block;height: 0;clear: both;visibility: hidden;zoom: 1}
+.clearfix {display: block}
+.no-margin{margin-bottom: 0px !important;}
+
+/*Colours*/
+:root{--section-padding:100px 0px;--green:#9BCC19;--dark-grey:#5e5e5e;--light-grey:#ebebeb;}
+
+.header{line-height: 5;width: 100%;font-size: 14px;position: absolute;z-index:50;background-color: transparent;top: 0;left: 0;}
+.header .header-left .button-menu{display: none;}
+.header .header-left .logo{display: table;width: 100%;height: 100%;}
+.header .header-left .logo .logo-inner{display: table-cell;vertical-align: middle;}
+.header .header-left .logo .logo-inner img,.header-sticky .header-left .logo .logo-inner img{height: 50px;width: auto;}
+.header .header-right .nav .nav-inner{text-align:right;width: 100%;}
+.header .header-right .nav .nav-inner .hvr-underline-from-left:before{bottom: 30%;}
+.header .header-right .nav .nav-inner ul li{list-style: none;display: inline-block;margin-left: 20px;}
+.header .header-right .nav .nav-inner ul li a{text-decoration: none;color: #fff;}
+
+.header-sticky{display: none;background-color:#fff;line-height: 4;position: relative;top:0;border-bottom: 1px solid #f2f2f2;width: 100%;font-size: 14px;margin-bottom: 80px;}
+.header-sticky .header-left .button-menu{display: none;}
+.header-sticky .header-left .logo{display: table;width: 100%;height: 100%;}
+.header-sticky .header-left .logo .logo-inner{display: table-cell;vertical-align: middle;}
+.header-sticky .header-right .nav .nav-inner{text-align: right;width: 100%;}
+.header-sticky .header-right .nav .nav-inner .hvr-underline-from-left:before{bottom: 20%;}
+.header-sticky .header-right .nav .nav-inner ul li{list-style: none;display: inline-block;margin-left: 10px;}
+.header-sticky .header-right .nav .nav-inner ul li a{text-decoration: none;color: #000;}
+.sticky{display:block;position: fixed;z-index: 100;}
+
+.page-banner{position: relative;}
+.page-banner .overlay{position: absolute;width: 100%;height: 100%;top: 0;bottom:0;right: 0;left: 0;background: #414A4C; z-index: 0;opacity: 0.40;}
+.page-banner .page-banner-background .page-banner-image{width:100%;height:auto;position:relative;padding-bottom:  25%;}
+.page-banner .page-banner-header{position: absolute;top: 0;left: 0;width: 100%;height:100%;text-align: center;z-index: 10;}
+.page-banner .page-banner-header .page-banner-text{color: #EBEBEB;text-transform: uppercase;position: absolute;bottom: 25%;width: 100%;}
+
+.front-page{position: relative;overflow: hidden;}
+.services-page .underline{height: 4px;background-color:#9bcc19;width: 140px;margin: 0 auto 15px auto;}
+
+.services-page .unqiue-uk-india{padding:var(--section-padding);text-align: center;position: relative;}
+.services-page .unqiue-uk-india .title h5{width: 50%;margin: 0 auto;}
+.services-page .unqiue-uk-india .models{padding-top: 100px;}
+.services-page .unqiue-uk-india .models .model{padding: 15px;margin-bottom: 30px;text-align: left;}
+.services-page .unqiue-uk-india .models .bottom-margin{margin-bottom: 0px;}
+.services-page .unqiue-uk-india .models .model .model-title h5{font-weight: 600;}
+.services-page .unqiue-uk-india .models .model .model-icon .icon{margin:0px auto;display: block;margin-bottom: 15px;text-align: center;}
+.services-page .unqiue-uk-india .models .model .model-icon .icon img{height: 80px;width: auto;}
+
+.services-page .tech-capabilites{padding:var(--section-padding);background-color: #f1f1f1;}
+.services-page .tech-capabilites .title {text-align: center;}
+.services-page .tech-capabilites .title h5{width: 50%;margin: 0 auto;}
+.services-page .tech-capabilites .capabilites-info{text-align: center;}
+.services-page .tech-capabilites .capabilites{padding: 100px 0px;}
+.services-page .tech-capabilites .capabilites .capabilite .frontend{background-image:url('../images/frontend.png');padding-bottom: 100%;background-size: contain;background-repeat: no-repeat;background-position: center;}
+.services-page .tech-capabilites .capabilites .capabilite .backend{background-image:url('../images/backend.png');padding-bottom: 100%;background-size: contain;background-repeat: no-repeat;background-position: center;}
+.services-page .tech-capabilites .capabilites .capabilite .mobile{background-image:url('../images/mobile.png');padding-bottom: 100%;background-size: contain;background-repeat: no-repeat;background-position: center;}
+
+.hexagon {position: relative;width: 300px; height: 173.21px;background-color: #9BCC19;margin: 86.60px auto;}
+.hexagon:before,.hexagon:after {content: "";position: absolute;width: 0;border-left: 150px solid transparent;border-right: 150px solid transparent;}
+.hexagon:before {bottom: 100%;border-bottom: 86.60px solid #9BCC19;}
+.hexagon:after {top: 100%;width: 0;border-top: 86.60px solid #9BCC19;}
+.left{float: left;}
+.right{float:right; }
+
+.services-page .start-up-service-model{text-align: center;padding:var(--section-padding);}
+.services-page .start-up-service-model .title h5{margin: 0 auto;width: 50%;}
+.services-page .start-up-service-model .service-models{padding: 100px 0px;}
+.services-page .start-up-service-model .service-models .service-model{background-color: #ebebeb;height: 100%;}
+.services-page .start-up-service-model .service-models .service-model .service{position: relative;}
+.services-page .start-up-service-model .service-models .service-model .service .name{position: absolute;top: 0;text-align: center;z-index: 12;display: table;height: 100%;width: 100%;}
+.services-page .start-up-service-model .service-models .service-model .service .name h5{display: table-cell;vertical-align: middle;font-weight: 600;}
+.services-page .start-up-service-model .service-models .service-model .description{padding: 20px;border-bottom:1px solid gray;}
+.services-page .start-up-service-model .service-models .service-model .price{padding: 20px;}
+.services-page .start-up-service-model .service-models .service-model .service .overlay{position: absolute;top: 0;left: 0;height: 100%;width: 100%;background-color:#f1f1f1;opacity: 0.6; z-index: 10;}
+.services-page .start-up-service-model .service-models .service-model .service .service-banner-image{;padding-bottom: 50%; position: relative;z-index: 9;}
+.services-page .start-up-service-model .call-to-action .action a{background-color: var(--green);padding: 10px 30px;color: white;font-weight: 600;}
+
+.services-page .team{text-align: center;padding:var(--section-padding);background-color: #f1f1f1;}
+.services-page .team .title h5{width:50%;margin: 0 auto}
+.services-page .team .team-members{padding:100px 30px;}
+.services-page .team .team-members .team-member{position: relative;}
+.services-page .team .team-members .team-member:hover .overlay{position: absolute;z-index: 10;top: 0;bottom:0;right: 0;left: 0;width: 100%;height: 100%;opacity: 0.6;background-color:#414A4C}
+.services-page .team .team-members .team-member .team-member-info{display: none;}
+.services-page .team .team-members .team-member:hover .team-member-info{position: absolute;top: 0;height: 100%;width: 100%;z-index: 11;color: #f1f1f1;display: table;}
+.services-page .team .team-members .team-member .team-member-info .team-member-info-inner{display: table-cell;vertical-align: middle;padding: 20px;font-weight: 600;}
+.services-page .team .team-members .team-member .team-member-info .team-member-info-inner .postion{color:var(--green);}
+.services-page .team .team-members .team-member .team-member-banner .team-member-image{background-image:url('../images/stephen_mappouridis copy.jpg');height: 500px; position: relative;z-index: 9;background-size: cover;background-position: center;background-repeat: no-repeat;}
+
+.services-page .contact-form{position: relative;overflow: hidden;}
+.services-page .contact-form .title{position: absolute;top: 11%;z-index: 11;color: #f1f1f1;width: 100%;text-align: center;}
+.services-page .contact-form .title h5{margin: 0px auto; width: 50%;}
+.services-page .contact-form .form{position: absolute;width: 100%;top: 40%;bottom: 0;color: #f1f1f1;z-index: 11;}
+.services-page .contact-form .overlay{position: absolute;top: 0;bottom:0;left: 0;right: 0;height: 100%;width: 100%;background-color: #414A4C;opacity: 0.6;z-index: 10;}
+.services-page .contact-form .page-banner-background .page-banner-image{background-image:url('../images/wheat.jpg');padding-bottom: 800px; position: relative;z-index: 9;background-size: cover;background-position: center;}
+.services-page .contact-form form .btn-primary{background-color: #9BCC19;border-color:#9BCC19;width: 100%;}
+.services-page .contact-form form select{  margin: 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;-webkit-appearance: none;-moz-appearance: none;}
+.services-page .contact-form form select.classic {background-image:linear-gradient(45deg, transparent 50%, white 50%),linear-gradient(135deg, white 50%, transparent 50%),linear-gradient(to right, #9BCC19, #9BCC19);background-position:calc(100% - 20px) calc(1em + 2px),calc(100% - 15px) calc(1em + 2px),100% 0;background-size:5px 5px,5px 5px,2.5em 2.5em;background-repeat: no-repeat;}
+.services-page .contact-form form select.classic:focus {background-image:linear-gradient(45deg, white 50%, transparent 50%),linear-gradient(135deg, transparent 50%, white 50%),linear-gradient(to right, #9BCC19, #9BCC19);background-position:calc(100% - 15px) 1em,calc(100% - 20px) 1em,100% 0;background-size:5px 5px,5px 5px,2.5em 2.5em;background-repeat: no-repeat;border-color: grey;outline: 0;}
+
+.pricing-page{position: relative;overflow: hidden;}
+.pricing-page .title .underline{height: 4px;background-color:#9bcc19;width: 140px;margin: 0 auto 15px auto;}
+.pricing-page .pricing {padding-top: 100px;}
+.pricing-page .pricing .title {display: table;height: 100%;width: 100%;text-align: center;}
+.pricing-page .pricing .title .title-center{display: table-cell;vertical-align: middle;}
+.pricing-page .pricing .pricing-table{margin-top: 100px;background-color: var(--dark-grey);padding: 30px 10px;color: white;}
+.pricing-page .pricing .pricing-table .title{text-align: left;margin-bottom: 20px;color: white;}
+.pricing-page .pricing .price-cards{width: 100%;height: 100%;overflow: hidden;padding: 100px 0;}
+.pricing-page .pricing .price-cards .price-card{}
+.pricing-page .pricing .price-cards .price-card .department{font-weight: 600;}
+.pricing-page .pricing .price-cards .price-card .department .center-department{}
+.pricing-page .pricing .price-cards .price-card .price{font-weight: 600;}
+.pricing-page .pricing .price-cards .price-card .btn-card{padding: 10px 20px;border: 1px solid var(--dark-grey);}
+.pricing-page .pricing .price-cards  a{color: #000;}
+.pricing-page .pricing .price-cards .nav-pills {color: #000;}
+.pricing-page .pricing .price-cards .nav-pills .active {color: #fff!important;}
+.pricing-page .nav-pills .nav-link {border: 1px solid #f1f1f1;border-radius: 0;}
+.pricing-page .nav-pills .nav-link:hover{background-color: var(--green);color: white;border-color: var(--green);}
+.pricing-page .nav-pills .nav-link:hover a{color: white;}
+.pricing-page .owl-theme .owl-dots{text-align: center;margin-top: 30px;}
+.pricing-page .owl-theme .owl-dots .owl-dot{display: inline-block;}
+.pricing-page .owl-theme .owl-dots span {background: none repeat scroll 0 0 #869791;border-radius: 20px;display: block;height: 12px;margin: 5px 7px;opacity: 0.5;width: 12px;}
+.pricing-page .owl-theme .owl-dots .active span {background: none repeat scroll 0 0 var(--green);opacity: 0.8;}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {border-radius: 0px;background-color: var(--green);border-color: var(--green);}
+.pricing-page .why-us{padding: 100px 0px;background-color: #f1f1f1;}
+.pricing-page .why-us .why{padding-top: 50px;}
+.pricing-page .why-us .why .tab-pane p{padding: 20px;background-color: #fff;}
+.pricing-page .why-us .why .nav-tabs {border-bottom: 1px solid #fff;}
+.pricing-page .why-us .why .why-us-btn{padding-top: 50px;}
+.pricing-page .why-us .why .why-us-btn .why-btn a{color: #fff;background-color: var(--green);padding: 15px 30px;font-weight: 600;}
+.pricing-page .why-us .link,.pricing-page .why-us .nav-tabs .nav-link.active {color: var(--green);background-color: #fff;border-color: #fff #fff #fff;font-weight: 600;}
+.pricing-page .why-us .nav-tabs .nav-link{border-color: #fff;}
+.pricing-page .why-us .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {border-color:#fff;background-color: #fff;}
+.pricing-page .why-us .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover a{color: var(--green);}
+.pricing-page .why-us .nav-tabs a{color: #000;}
+
+.pricing-page .Q-A{padding: 100px 0;position: relative;}
+.pricing-page .Q-A .fa-quote-right{opacity: 0.3;position: absolute;top: 10%;right: 10%;transform: rotate(-20deg);color: var(--dark-grey);}
+.pricing-page .Q-A .fa-quote-left{opacity: 0.3;position: absolute;bottom: 10%;left: 10%;transform: rotate(20deg);color: var(--dark-grey);}
+.pricing-page .Q-A .owl-carousel{display: block;padding-top: 30px;}
+.pricing-page .Q-A .owl-carousel .item{margin: 0px 20px;position: relative;}
+.pricing-page .Q-A .owl-carousel .page-banner-header{background-color: #f1f1f1;padding: 15px;}
+.pricing-page .Q-A .owl-carousel .page-banner-header .Q{font-weight: 600;}
+/*.pricing-page .Q-A .owl-carousel .arrow-left {width: 0; height: 0; border-bottom: 15px solid transparent;border-top: 15px solid transparent;border-right: 20px solid #f1f1f1; font-size: 0px;line-height: 0;position: absolute;left: -3.9%;top: 15%;}
+.pricing-page .Q-A .owl-carousel .arrow-right {width: 0; height: 0; border-bottom: 15px solid transparent;border-top: 15px solid transparent;border-left: 20px solid #f1f1f1; font-size: 0px;line-height: 0;position: absolute;right: -3.9%;top: 15%;}
+*/
+
+.projects-page{position: relative;overflow:hidden;}
+.projects-page .smart-cop{padding:100px 0px;}
+.projects-page .smart-cop .introduction{display: table;height: 100%;width: 100%;}
+
+.projects-page .smart-cop .introduction p{display: table-cell;vertical-align: middle;}
+.projects-page .smart-cop .introduction p span{font-weight: 600;font-size: 28px;}
+.projects-page .smart-cop .img{background-image:url('../images/smart-cop.png');height: 500px;width: auto;background-size: contain;background-repeat: no-repeat;background-position: center;}
+.projects-page .our-awards{padding: 100px 0;text-align: center;}
+.projects-page .our-awards .title h4{font-weight: 600;}
+.projects-page .our-awards .awards{padding-top: 100px;display: table;flex-wrap: wrap;width: 50%;margin: 0px auto;}
+.projects-page .our-awards .awards .award{display: inline-block;margin:0px 40px;display: table-cell;vertical-align: middle;}
+.projects-page .our-awards .awards .award .award-info{font-size: 20px;}
+.projects-page .our-awards .awards .award .img-award1{background-image:url('../images/WSA.png');height: 100px;width: auto;background-size: contain;background-repeat: no-repeat;background-position: center;margin-bottom: 20px;}
+.projects-page .our-awards .awards .award .img-award2{background-image:url('../images/IOD.png');height: 100px;width: auto;background-size: contain;background-repeat: no-repeat;background-position: center;margin-bottom: 20px;}
+.projects-page .our-awards .awards .award .img-award3{background-image:url('../images/VNA.png');height: 100px;width: auto;background-size: contain;background-repeat: no-repeat;background-position: center;margin-bottom: 20px;}
+
+.contact-page{position: relative;overflow: hidden;padding:var(--section-padding);}
+.contact-page .contact-info{padding-top: 150px;}
+.contact-page .contact-info .contact{text-align: center;}
+.contact-page .contact-info .contact h3{font-size: 30px;}
+.contact-page .contact-info .title{text-align: center;margin-bottom: 40px;}
+.contact-page .contact-info .title .underline{height: 4px;background-color:#9bcc19;width: 18px;margin: 0 auto 15px auto;}
+.contact-page .contact-info .splitter{background-color: #9BCC19;height: 100%;width: 4px;margin: 0 auto;}
+.contact-page .form{padding:0px 20px 150px 20px;border-bottom: 1px solid #ebebeb;}
+.contact-page .form .underline{height: 4px;background-color: var(--green);width: 140px;margin: 0 auto 15px auto;}
+.contact-page .form form {padding: 0px 50px;}
+.contact-page .form form .btn-primary{background-color: #9BCC19;border-color:#9BCC19;width: 100%;}
+.contact-page .form form select{  margin: 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;-webkit-appearance: none;-moz-appearance: none;}
+.contact-page .form form select.classic {background-image:linear-gradient(45deg, transparent 50%, white 50%),linear-gradient(135deg, white 50%, transparent 50%),linear-gradient(to right, #9BCC19, #9BCC19);background-position:calc(100% - 20px) calc(1em + 2px),calc(100% - 15px) calc(1em + 2px),100% 0;background-size:5px 5px,5px 5px,2.5em 2.5em;background-repeat: no-repeat;}
+.contact-page .form form select.classic:focus {background-image:linear-gradient(45deg, white 50%, transparent 50%),linear-gradient(135deg, transparent 50%, white 50%),linear-gradient(to right, #9BCC19, #9BCC19);background-position:calc(100% - 15px) 1em,calc(100% - 20px) 1em,100% 0;background-size:5px 5px,5px 5px,2.5em 2.5em;background-repeat: no-repeat;border-color: grey;outline: 0;}
+.contact-page .form .form-introduction{display: table;width: 100%;height: 100%;text-align: center;}
+.contact-page .form .form-introduction .introduction{display: table-cell;vertical-align:middle;padding: 0px 50px;}
+.contact-page .form .form-introduction .introduction h4{line-height: 2;}
+.footer{background-color: #5E5E5E;padding: 40px 0;color: #ebebeb;}
+.footer .our-mission .mission-description p{font-size: 14px;}
+.footer .our-mission .mission-title h5{font-size: 16px;font-weight: 600;}
+.footer .footer-menu{text-align: center;display:table;width: 100%;height: 100%;}
+.footer .footer-menu .title-menu h5{font-weight: 600; font-size: 16px;}
+.footer .footer-menu .menu ul{display: table-cell;vertical-align: middle;padding:0 10px;}
+.footer .footer-menu .menu ul li{list-style: none;display: inline-block;margin:0 10px;}
+.footer .footer-menu .menu ul li a{text-decoration: none;color: #ebebeb;}
+.footer .logo{display: table;width: 100%;height: 100%;}
+.footer .logo .logo-inner{display: table-cell;vertical-align: middle;text-align: center;}
+.footer .logo .logo-inner img{height: 50px;width: auto;}

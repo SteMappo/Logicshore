@@ -1,0 +1,47 @@
+@media (min-width: 1200px) {
+  /*.contact-page .container {width: 1240px;max-width: 100%;}*/
+}
+
+@media (max-width: 1000px) {
+  .header .header-left .logo .logo-inner img, .header-sticky .header-left .logo .logo-inner img{height: 30px;}
+  .header .button-menu,.header-sticky .button-menu{display: block!important;}
+  .header .header-left .button-menu .btn-menu,.header-sticky .header-left .button-menu .btn-menu{padding:6px 10px;color: #EBEBEB;position: absolute;top: 30%;right: 7%;border: 1px solid #EBEBEB;border-radius: 5px;}
+  .header-sticky .header-left .button-menu .btn-menu{color: #000;border-color: #000;}
+  .header-sticky .header-left .button-menu .btn-menu{top: 8%;}
+  .header .header-right .nav,.header-sticky .header-right .nav{padding: 10px 0;}
+  .header .header-right .nav .nav-inner ul li,.header-sticky .header-right .nav .nav-inner ul li{margin-left: 0px;}
+  .header .nav .nav-inner .hvr-underline-from-left:before,.header-sticky .nav .nav-inner .hvr-underline-from-left:before{bottom: 0!important;}
+  .header .header-right .nav,.header-sticky .header-right .nav{display:none;}
+  .header .header-right .nav ul,.header-sticky .header-right .nav ul{margin-bottom:8px;background-color: #fff;width:100%;line-height: 2!important;padding-left: 0px}
+  .header .header-right .nav ul li,.header-sticky .header-right .nav ul li{width:100%;display:block;text-align: center;background-color: #fbfbfb;margin: 2px 0px;}
+  .header .header-right .nav ul li a,.header-sticky .header-right .nav ul li a{color: #222!important;padding:7px 15px; display:block;font-weight:600; font-size:16px}
+  .header .header-right .nav ul li a:hover,.header-sticky .header-right .nav ul li a:hover{color: #9BCC19!important;}
+  
+  
+
+}
+@media (min-width: 1000px) {
+   
+}
+
+
+@media screen and (max-width: 600px) {
+
+.header-sticky .header-left .button-menu .btn-menu{top: 15%;}
+.page-banner .page-banner-background .page-banner-image{padding-bottom: 80%;}
+.page-banner .page-banner-header .page-banner-text {bottom: 20%;}
+.page-banner .page-banner-header .page-banner-text h2{font-size: 28px;}
+.contact-page #form-responsive{margin-bottom: 80px;}
+.contact-page .contact-info .splitter{background-color: white;margin:40px 0px;}
+.services-page .title h5{width: 95% !important;}
+.services-page .contact-form .title{top: 6%!important;}
+.services-page .start-up-service-model .service-models .col-md-4{margin-bottom: 30px;}
+.services-page .team .team-members .team-member{margin-bottom: 30px;}
+.services-page .tech-capabilites .capabilites .col-md-6,.services-page .tech-capabilites .capabilites .col-md-12{margin-bottom: 30px;}
+.footer{text-align: center;}
+.footer .footer-menu .menu{padding: 0px!important;}
+.footer .footer-menu .menu ul li{margin:0 10px 0 0;}
+.footer .logo{margin-top: 15px;}
+
+}
+
